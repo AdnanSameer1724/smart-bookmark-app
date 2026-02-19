@@ -110,37 +110,6 @@ export default function BookmarkList({ initialBookmarks, userId }) {
 
   return (
     <div className="space-y-4">
-      {/* Debug Panel */}
-      {/* <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-4">
-        <div className="flex items-center justify-between mb-2">
-          <h3 className="font-bold text-yellow-900">🔍 Realtime Debug Panel</h3>
-          <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-            realtimeStatus === 'SUBSCRIBED' 
-              ? 'bg-green-200 text-green-800' 
-              : 'bg-orange-200 text-orange-800'
-          }`}>
-            {realtimeStatus}
-          </span>
-        </div>
-        
-        <div className="bg-white rounded-lg p-3 max-h-48 overflow-y-auto">
-          <div className="text-xs font-mono space-y-1">
-            {eventLog.length === 0 ? (
-              <p className="text-gray-400">Waiting for events...</p>
-            ) : (
-              eventLog.map((log, i) => (
-                <div key={i} className="text-gray-700">{log}</div>
-              ))
-            )}
-          </div>
-        </div>
-
-        <div className="mt-3 text-xs text-yellow-800">
-          <p><strong>Expected flow:</strong></p>
-          <p>1. Add bookmark → See "✅ INSERT received" → See "➕ Adding to UI"</p>
-          <p>2. Delete bookmark → See "🔴 Attempting to delete" → "✔️ Delete request successful" → "🗑️ DELETE received" → "➖ Removed from UI"</p>
-        </div>
-      </div> */}
 
       {/* Bookmarks List */}
       {bookmarks.length === 0 ? (
